@@ -93,7 +93,7 @@ function SecondSection() {
                 <div className="flex justify-center items-center">
                   <Image
                     alt="pricing card"
-                    src="/images/group_2.png"
+                    src="/images/pricingcard.png"
                     width={1432}
                     height={1520}
                     className="w-[15rem] lg:w-[20rem]"
