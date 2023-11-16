@@ -17,7 +17,7 @@ function WindowMacOs() {
           height="391"
           rx="10"
           fill="white"
-          shape-rendering="crispEdges"
+          shapeRendering="crispEdges"
         />
       </g>
       <rect
@@ -35,8 +35,8 @@ function WindowMacOs() {
         height="11.5"
         rx="5.75"
         stroke="black"
-        stroke-opacity="0.2"
-        stroke-width="0.5"
+        strokeOpacity="0.2"
+        strokeWidth="0.5"
       />
       <rect
         x="85.4829"
@@ -53,8 +53,8 @@ function WindowMacOs() {
         height="11.5"
         rx="5.75"
         stroke="black"
-        stroke-opacity="0.2"
-        stroke-width="0.5"
+        strokeOpacity="0.2"
+        strokeWidth="0.5"
       />
       <rect
         x="105.483"
@@ -71,8 +71,8 @@ function WindowMacOs() {
         height="11.5"
         rx="5.75"
         stroke="black"
-        stroke-opacity="0.2"
-        stroke-width="0.5"
+        strokeOpacity="0.2"
+        strokeWidth="0.5"
       />
       <path d="M40 86.2536H865.381" stroke="#D2D2D2" />
       <defs>
@@ -83,9 +83,9 @@ function WindowMacOs() {
           width="905.381"
           height="471"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

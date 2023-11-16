@@ -56,7 +56,7 @@ function SecondSection() {
                     x="0px"
                     y="0px"
                     viewBox="0 0 28 28"
-                    enable-background="new 0 0 28 28"
+                    enableBackground="new 0 0 28 28"
                   >
                     <polygon
                       fill="#FFFFFF"

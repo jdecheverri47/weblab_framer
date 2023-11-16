@@ -68,6 +68,7 @@ function Header() {
             alt="logo"
             width={2563}
             height={614}
+            priority={true}
             className={`w-[8rem]`}
           />
         </a>
