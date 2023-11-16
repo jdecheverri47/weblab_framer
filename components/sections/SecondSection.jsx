@@ -92,11 +92,13 @@ function SecondSection() {
                 </p>
                 <div className="flex justify-center items-center">
                   <Image
-                    alt=""
+                    alt="pricing card"
                     src="/images/group_2.png"
                     width={1432}
                     height={1520}
                     className="w-[15rem] lg:w-[20rem]"
+                    priority={true}
+                    quality={100}
                   />
                 </div>
               </div>
