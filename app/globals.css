@@ -3,25 +3,232 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --bgcolor: #c83bb1;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #0a0517;
+  color: #fff;
+  font-family: "GT Walsheim Trial";
+}
+
+p {
+  color: #bfb1e3;
+}
+
+ul {
+  list-style: none;
+}
+
+.gradient {
+  background-color: #21d4fd;
+  background-image: linear-gradient(75deg, #21d4fd 0%, #6d21ff 80%);
+}
+
+.gradient_text {
+  background-color: #21d4fd;
+  background-image: linear-gradient(75deg, #21d4fd 0%, #6d21ff 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient_text_orange {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffdd00 60%, #ffa200 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient_button {
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+}
+.gradient_button_navbar {
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+  background-size: 200% auto;
+}
+
+.gradient_bullet {
+  background-color: #21d4fd;
+  background-image: linear-gradient(90deg, #21bbfd 39%, rgb(33, 128, 253) 99%);
+}
+
+.gradient_bullet_text {
+  background-color: #21d4fd;
+  background-image: linear-gradient(90deg, #21bbfd 39%, rgb(33, 139, 253) 99%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.bg-grid {
+  background-image: url("/images/grid.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.circle {
+  width: 80rem;
+  height: 40rem;
+  border-radius: 50%;
+  background: rgba(46, 23, 105, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  transition: all 300ms ease;
+  filter: blur(100px);
+}
+
+.circle_orange {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: 50%;
+  z-index: 0;
+  transition: all 300ms ease;
+  /* filter: blur(100px); */
+}
+
+.card {
+  border-radius: 18px;
+  box-shadow: rgba(94, 193, 206, 0.3) 0px 4px 36px 0px, rgba(255, 255, 255, 0.2) 0px 0px 140px 0px inset;
+  overflow: hidden;
+}
+
+.card.orange {
+  background-color: #ffe53b;
+  background-image: linear-gradient(147deg, #ffdd00 0%, #ff2525 74%);
+}
+
+.card.blue {
+  background-image: radial-gradient(
+    circle farthest-corner at 7.2% 13.6%,
+    rgb(2, 203, 221) 0%,
+    rgba(8, 70, 218, 1) 90%
+  );
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card.green {
+  background-image: linear-gradient(
+    135deg,
+    #00aeff 0%,
+    hsl(146, 100%, 50%) 100%
+  );
+}
+
+.card.purple {
+  background-image: radial-gradient(
+    circle farthest-corner at 7.2% 13.6%,
+    rgba(221, 22, 224, 1) 11%,
+    rgba(111, 22, 190, 1) 88.2%
+  );
+}
+
+.card.dark_purple {
+  background-image: linear-gradient(
+    126.3deg,
+    rgba(30, 2, 83, 1) 32.2%,
+    rgba(198, 55, 160, 0.46) 109.2%
+  );
+}
+
+.backdropp {
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(9, 5, 21, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.purple_shadow {
+  box-shadow: rgba(100, 6, 255, 0.6) 0px 0px 30px 0px;
+}
+
+.card_services {
+  width: 25rem;
+  height: 35rem;
+  background-color: #2b1f4a;
+  border-radius: 18px;
+}
+
+.contact_card {
+  box-shadow: rgba(255, 255, 255, 0.07) 0px 0px 0px 1px inset, rgba(27, 45, 95, 0.6) 0px 0px 80px 0px;
+}
+
+.bg_contact {
+  background-image: url("/images/people-working-together.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input_contact {
+  width: 80%;
+  height: 3rem;
+  border-radius: 16px;
+  background-color: #2a203b;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+
+@media (width < 1024px) {
+  section {
+    height: fit-content;
+  }
+
+  .circle {
+    width: 100%;
+    height: 40rem;
+  }
+
+  
+}
+
+
+@media (width < 650) {
+  .card_services {
+    width: 100%;
+    height: 35rem;
+  }
 }
