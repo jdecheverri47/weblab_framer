@@ -10,22 +10,22 @@ export const metadata = {
 const Konnect = localFont({
   src: [
     {
-      path: './Konnect-Regular.otf',
+      path: 'fonts/Konnect-Regular.otf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: './Konnect-SemiBold.otf',
+      path: 'fonts/Konnect-SemiBold.otf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: './Konnect-Bold.otf',
+      path: 'fonts/Konnect-Bold.otf',
       weight: '700',
       style: 'normal',
     },
     {
-      path: './Konnect-Medium.otf',
+      path: 'fonts/Konnect-Medium.otf',
       weight: '500',
       style: 'normal',
     },
