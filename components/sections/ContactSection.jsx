@@ -26,19 +26,24 @@ function ContactSection() {
   return (
     <section className="pt-14 lg:pt-8">
       <div className="flex flex-col justify-center items-center px-5">
-        <div className="flex flex-col justify-center items-start md:items-center h-full">
-          <h3 className="gradient_bullet_text text-3xl font-bold">Contact</h3>
-          <h2 className="text-5xl font-bold mt-2 lg:mt-5">Reach Out Today</h2>
-          <p className="text-2xl text-center mt-2 lg:mt-4 max-w-3xl text-[#BFB1E3]">
+
+        <div className="lg:px-[10vw] px-3 md:px-8 flex flex-col justify-center md:items-center items-start md:pt-10 w-full">
+          <h3 className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center">
+            Contact
+          </h3>
+          <h2 className="text-4xl md:text-5xl md:text-center font-bold md:mt-8 mt-5">
+            Reach Out Today
+          </h2>
+          <p className="md:max-w-2xl md:text-center text-lg md:text-xl md:pt-5">
             We&apos;re Just a Message Away
           </p>
         </div>
 
-        <div className="md:w-[75vw] lg:w-[60vw] h-full bg-[#1c162c] rounded-[16px] contact_card mt-10">
+        <div className="md:w-[75vw] lg:w-[60vw] h-full bg-[#1c162c] rounded-[16px] contact_card mt-10 w-[90%]">
           <div className="w-full h-full overflow-hidden lg:grid lg:grid-cols-2">
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col justify-start items-start md:items-center lg:items-start bg-[#fafafa] md:w-full lg:h-[92%] lg:w-[90%] lg:rounded-[16px] bg_contact px-4 py-5 rounded-t-[16px] md:py-20">
-                <h2 className="text-5xl font-bold lg:mt-10 lg:ml-5">
+                <h2 className="text-5xl font-bold lg:mt-10 lg:ml-5 text-center md:text-left">
                   Let&apos;s Work Together
                 </h2>
               </div>
@@ -52,7 +57,7 @@ function ContactSection() {
                   {...register("name")}
                   type="text"
                   placeholder="Name"
-                  className="input_contact mt-5"
+                  className="input_contact mt-5 "
                 />
                 <input
                   {...register("email")}
