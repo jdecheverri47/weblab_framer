@@ -5,34 +5,23 @@ function SecondSection() {
   return (
     <section className="h-fit">
       <div>
-        <div className="flex flex-col justify-center md:items-center items-start gap-4">
-          <h3 className="gradient_bullet_text text-2xl xl:text-3xl font-bold pl-5">Benefits</h3>
-          <h2 className="text-5xl font-bold md:text-center lg:mx-10 mx-5">
+        <div className="flex flex-col justify-center md:items-center items-start gap-4 px-2">
+          <h3 className="gradient_bullet_text text-xl md:text-2xl xl:text-3xl font-bold pl-5">
+            Benefits
+          </h3>
+          <h2 className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5">
             Tailored Benefits for Your Web Needs
           </h2>
-          <div className="md:grid md:grid-cols-2 flex flex-col md:gap-8 pt-5 lg:mx-10 mx-5 gap-4">
+          <div className="flex flex-col md:pt-5 lg:mx-10 mx-5">
             <p className="max-w-xl text-sm md:text-lg">
-              In the dynamic world of digital innovation, making your mark
-              demands more than just a functional digital product; it requires a
-              harmonious blend of aesthetics, functionality, and enduring
-              appeal. At WebLab, we understand the intricacies of the digital
-              realm and are dedicated to propelling your online presence to new
-              heights. Our commitment goes beyond conventional development; we
-              immerse ourselves in your vision, bringing a blend of creativity,
-              technical excellence, and strategic thinking to every project.
-            </p>
-            <p className="max-w-xl text-sm md:text-lg">
-              With a keen eye for detail and a passion for perfection, we turn
-              your digital dreams into tangible realities. Our holistic approach
-              ensures that from the initial concept to the final rollout, every
-              aspect of your project is handled with utmost care and precision.
-              Embrace a partnership with us and experience a journey where your
-              objectives are met with our innovative solutions, unparalleled
-              expertise, and a relentless pursuit of excellence.
+              Explore a range of benefits designed to elevate your web presence.
+              Our tailored solutions offer enhanced usability, efficiency, and
+              innovative features to fit your specific online needs. Experience
+              the difference in every click.
             </p>
           </div>
 
-          <div className="w-full px-5 lg:px-10 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
+          <div className="w-full px-10 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
             <div className="md:w-[45rem] h-[25rem] card orange">
               <div className="pt-8 px-8">
                 <h3 className="font-bold text-3xl ">Peak Quality Design</h3>
@@ -104,7 +93,7 @@ function SecondSection() {
               </div>
             </div>
           </div>
-          <div className="w-full px-5 lg:px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
+          <div className="w-full px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
             <div className="md:w-[30rem] h-[25rem] card green">
               <div className="pt-8 px-8">
                 <h3 className="font-bold text-3xl">
@@ -132,7 +121,7 @@ function SecondSection() {
                   src="/images/android_mockup.png"
                   width={1939}
                   height={2046}
-                  className="lg:w-[10vw] w-[80%] rotate-12 absolute -left-2 xl:w-[55%] xl:left-10"
+                  className="lg:w-[10vw] w-[80%] rotate-12 absolute -left-2 xl:w-[55%] xl:left-10 pt-4 "
                 />
                 <Image
                   alt=""
