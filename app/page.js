@@ -7,7 +7,7 @@ import Footer from '@/components/sections/Footer'
 
 export default function Home() {
   return (
-    <main className='overflow-x-hidden'>
+    <main >
       <FirstSection />
       <SecondSection />
       <ThirdSection />
