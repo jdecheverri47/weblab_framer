@@ -3,7 +3,7 @@ import WindowMacOs from "../ui/WindowMacOs";
 
 function SecondSection() {
   return (
-    <section className="xl:h-[120vh] h-fit">
+    <section className="h-fit">
       <div>
         <div className="flex flex-col justify-center md:items-center items-start gap-4">
           <h3 className="gradient_bullet_text text-2xl xl:text-3xl font-bold pl-5">Benefits</h3>
