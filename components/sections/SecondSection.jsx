@@ -34,7 +34,7 @@ function SecondSection() {
             transition={{ duration: 1, delay: 0.5 }}
             className="flex flex-col md:pt-5 lg:mx-10 mx-5 lg:pt-0"
           >
-            <p className="max-w-xl text-sm md:text-lg text-center">
+            <p className="max-w-xl text-sm md:text-lg lg:text-center">
               Explore a range of benefits designed to elevate your web presence.
               Our tailored solutions offer enhanced usability, efficiency, and
               innovative features to fit your specific online needs. Experience
