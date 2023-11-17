@@ -270,7 +270,7 @@ section {
 
 @media (width < 650px) {
   .card_services {
-    width: 20rem;
+    width: 18rem;
     height: 27rem;
   }
 }

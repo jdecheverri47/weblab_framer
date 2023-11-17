@@ -18,6 +18,7 @@ function ThirdSection() {
       <div className="lg:grid lg:grid-cols-3 flex flex-col gap-4 md:w-[70%] lg:w-[75%] justify-center items-center pt-10 px-5 lg:px-10 lg:mx-auto lg:gap-0">
         <div className="card_services lg:mx-auto">
           <div className="py-2 h-full">
+          
             <div className="px-6 h-[5rem] flex justify-center items-center">
               <h2 className="text-2xl font-semibold text-center lg:text-left">
                 Websites Design and Development
