@@ -12,7 +12,7 @@ function PricingSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="gradient_bullet_text text-2xl md:text-3xl font-bold"
+            className="gradient_bullet_text text-2xl md:text-3xl font-bold xl:text-4xl"
           >
             Pricing
           </motion.h3>
@@ -21,7 +21,7 @@ function PricingSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1 }}
-            className="text-4xl md:text-5xl font-bold mt-5"
+            className="text-4xl md:text-5xl font-bold mt-5 xl:text-7xl"
           >
             Custom Pricing, Your Way!
           </motion.h2>
@@ -30,7 +30,7 @@ function PricingSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="text-xl md:text-2xl lg:text-center mt-4 md:max-w-3xl text-[#BFB1E3]"
+            className="text-xl md:text-2xl lg:text-center mt-2 md:max-w-3xl text-[#BFB1E3]"
           >
             We offer a variety of pricing options to fit your specific needs.
           </motion.p>

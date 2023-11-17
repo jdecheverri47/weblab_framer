@@ -12,7 +12,7 @@ function ThirdSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center"
+          className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center xl:text-4xl "
         >
           Services
         </motion.h3>
@@ -21,7 +21,7 @@ function ThirdSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 1 }}
-          className="text-4xl md:text-5xl md:text-center font-bold mt-8"
+          className="text-4xl md:text-5xl md:text-center font-bold mt-4 xl:text-7xl"
         >
           Where Technology Meets Creativity
         </motion.h2>
@@ -30,7 +30,7 @@ function ThirdSection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 1 }}
-          className="md:max-w-2xl md:text-center text-lg md:text-xl pt-2"
+          className="md:max-w-2xl md:text-center text-xl md:text-xl mt-4"
         >
           We specialize in crafting bespoke websites, intuitive web
           applications, and innovative mobile apps, each designed to elevate

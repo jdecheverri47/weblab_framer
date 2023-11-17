@@ -46,7 +46,7 @@ function FirstSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="font-bold text-5xl xl:text-8xl xl:max-w-5xl text-center gradient_text xl:h-[7rem]"
+          className="font-bold text-5xl xl:text-9xl xl:max-w-7xl text-center gradient_text xl:h-[8.3rem]"
         >
           Designing the Future
         </motion.h1>
@@ -54,7 +54,7 @@ function FirstSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="font-bold text-5xl xl:text-8xl  xl:max-w-4xl text-center"
+          className="font-bold text-5xl xl:text-9xl  xl:max-w-4xl text-center"
         >
           of the Web
         </motion.h1>

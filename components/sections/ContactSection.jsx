@@ -28,13 +28,13 @@ function ContactSection() {
       <div className="flex flex-col justify-center items-center px-5">
 
         <div className="lg:px-[10vw] px-3 md:px-8 flex flex-col justify-center md:items-center items-start md:pt-10 w-full">
-          <h3 className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center">
+          <h3 className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center xl:text-4xl">
             Contact
           </h3>
-          <h2 className="text-4xl md:text-5xl md:text-center font-bold md:mt-8 mt-5">
+          <h2 className="text-4xl xl:text-7xl md:text-5xl md:text-center font-bold mt-4">
             Reach Out Today
           </h2>
-          <p className="md:max-w-2xl md:text-center text-lg md:text-xl md:pt-5">
+          <p className="md:max-w-2xl md:text-center text-lg md:text-xl md:pt-2">
             We&apos;re Just a Message Away
           </p>
         </div>

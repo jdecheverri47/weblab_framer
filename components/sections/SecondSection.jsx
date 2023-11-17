@@ -14,7 +14,7 @@ function SecondSection() {
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
             // transition={{ duration: 1, delay:2 }}
-            className="gradient_bullet_text text-xl md:text-2xl xl:text-3xl font-bold pl-5"
+            className="gradient_bullet_text text-xl md:text-2xl xl:text-4xl font-bold pl-5"
           >
             Benefits
           </motion.h3>
@@ -23,7 +23,7 @@ function SecondSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5"
+            className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5 xl:text-7xl"
           >
             Tailored Benefits for Your Web Needs
           </motion.h2>
@@ -34,7 +34,7 @@ function SecondSection() {
             transition={{ duration: 1, delay: 0.5 }}
             className="flex flex-col md:pt-5 lg:mx-10 mx-5 lg:pt-0"
           >
-            <p className="max-w-xl text-lg md:text-lg lg:text-center">
+            <p className="max-w-2xl text-lg md:text-xl lg:text-center">
               Explore a range of benefits designed to elevate your web presence.
               Our tailored solutions offer enhanced usability, efficiency, and
               innovative features to fit your specific online needs. Experience
