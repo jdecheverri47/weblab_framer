@@ -31,8 +31,6 @@ const CircularProgressBar = ({ value, maxValue }) => {
         fill="white"
         textAnchor="middle"
         fontSize="20"
-        fontFamily="Konnect"
-
       >{`${Math.round(value)}`}</text>
     </svg>
   );

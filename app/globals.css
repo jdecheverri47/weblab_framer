@@ -41,6 +41,20 @@
   src: url('fonts/GTWalsheimPro-Regular.ttf');
 }
 
+@font-face {
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/GTWalsheimPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/GTWalsheimPro-Bold.ttf');
+}
+
 :root {
   --bgcolor: #c83bb1;
 }
@@ -265,6 +279,11 @@ section {
   padding-right: 1rem;
   margin-bottom: 1rem;
   transition: all 300ms ease-in-out;
+}
+
+text {
+  font-family: "GT Walsheim Pro", sans-serif;
+  font-weight: 700;
 }
 
 @media (width < 1024px) {
