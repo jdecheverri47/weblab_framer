@@ -1,13 +1,48 @@
 "use client";
-import { motion, useScroll } from "framer-motion";
+
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function FirstSection() {
-  const { scrollYProgress } = useScroll();
+  const titleRef = useRef();
+  const sectionRef = useRef();
+
+  // useEffect(() => {
+  //   const title = titleRef.current;
+  //   const section = sectionRef.current;
+  //   let ctx = gsap.context(() => {
+  //     const tl = gsap.timeline();
+  //     tl.fromTo(title, {opacity: 1, duration: 2}, {opacity: 0, duration: 2})
+  //     // tl.from(right, {xPercent: 100, duration: 2})
+
+  //     ScrollTrigger.create({
+  //       animation: tl,
+  //       trigger: section,
+  //       start: "top top",
+  //       end: "+=400",
+  //       scrub: 1,
+  //       pin: true,
+  //       pinSpacing: true,
+  //       anticipatePin: 1,
+  //       // markers: true,
+  //     })
+  //   }, section);
+
+  //   return () => {
+  //     ctx.revert();
+  //   }
+  // }, [])
+
   return (
-    <section className="overflow-hidden h-screen">
-      <div className="circle overflow-hidden"/>
+    <section className="overflow-hidden h-screen" ref={sectionRef}>
+      <div className="circle overflow-hidden" />
       <div className="flex flex-col justify-center items-center h-full w-screen">
         <motion.h1
+          ref={titleRef}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
