@@ -13,7 +13,7 @@ function PricingSection() {
         </div>
 
         <div className="flex lg:flex-row flex-col justify-center items-center gap-8 pt-10 px-5">
-          <div className="card bg-white w-[85%] h-[28.5rem] md:w-[24rem] md:h-[35rem] px-6">
+          <div className="card bg-white w-[85%] h-[28.5rem] md:w-[24rem] md:h-[30rem] px-6">
             <div className="pt-6">
               <h2 className="font-medium text-2xl text-[#222222]">
                 Website Pro Builder
@@ -22,7 +22,7 @@ function PricingSection() {
                 Build your own website with our team of experts.
               </p>
             </div>
-            <div className="py-3 md:py-6 ">
+            <div className="py-3 md:py-4">
               <h1 className="text-blue-500 text-5xl md:text-6xl font-bold font-sans">
                 $ 1499
               </h1>

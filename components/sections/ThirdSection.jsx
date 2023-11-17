@@ -2,13 +2,13 @@ import Image from "next/image";
 
 function ThirdSection() {
   return (
-    <section className="pt-10">
+    <section className="pt-12">
       <div className="lg:px-[10vw] px-8 flex flex-col justify-center md:items-center items-start pt-10">
         <h3 className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center">Services</h3>
         <h2 className="text-4xl md:text-5xl md:text-center font-bold mt-8">
           Where Technology Meets Creativity
         </h2>
-        <p className="md:max-w-2xl md:text-center text-lg md:text-xl pt-5">
+        <p className="md:max-w-2xl md:text-center text-lg md:text-xl pt-2">
           We specialize in crafting bespoke websites, intuitive web
           applications, and innovative mobile apps, each designed to elevate
           your digital presence with unmatched functionality and aesthetic
@@ -27,7 +27,7 @@ function ThirdSection() {
             <div className="w-full h-[12rem] overflow-hidden">
               <Image alt="" src='/images/Figma_design.png' width={3585} height={2240} className="object-cover"/>
             </div>
-            <div className=" px-6">
+            <div className="pt-3 px-6">
               <p className="text-sm lg:text-xl">
                 We design and develop websites that are not only visually
                 compelling, but have the functionality and advanced programming

@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import WindowMacOs from "../ui/WindowMacOs";
 
 function SecondSection() {
@@ -6,23 +8,48 @@ function SecondSection() {
     <section className="h-fit">
       <div>
         <div className="flex flex-col justify-center md:items-center items-start gap-4 px-2">
-          <h3 className="gradient_bullet_text text-xl md:text-2xl xl:text-3xl font-bold pl-5">
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            // transition={{ duration: 1, delay:2 }}
+            className="gradient_bullet_text text-xl md:text-2xl xl:text-3xl font-bold pl-5"
+          >
             Benefits
-          </h3>
-          <h2 className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5">
+          </motion.h3>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5"
+          >
             Tailored Benefits for Your Web Needs
-          </h2>
-          <div className="flex flex-col md:pt-5 lg:mx-10 mx-5">
-            <p className="max-w-xl text-sm md:text-lg">
+          </motion.h2>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="flex flex-col md:pt-5 lg:mx-10 mx-5 lg:pt-0"
+          >
+            <p className="max-w-xl text-sm md:text-lg text-center">
               Explore a range of benefits designed to elevate your web presence.
               Our tailored solutions offer enhanced usability, efficiency, and
               innovative features to fit your specific online needs. Experience
               the difference in every click.
             </p>
-          </div>
+          </motion.div>
 
           <div className="w-full px-10 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
-            <div className="md:w-[45rem] h-[25rem] card orange">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
+              className="md:w-[45rem] h-[25rem] card orange"
+            >
               <div className="pt-8 px-8">
                 <h3 className="font-bold text-3xl ">Peak Quality Design</h3>
                 <p className="text-white">
@@ -71,8 +98,14 @@ function SecondSection() {
                   <WindowMacOs />
                 </div>
               </div>
-            </div>
-            <div className="md:w-[30rem] h-[25rem] card blue">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
+              className="md:w-[30rem] h-[25rem] card blue"
+            >
               <div className="pt-8 px-8">
                 <h3 className="font-bold text-3xl">Flexible Pricing</h3>
                 <p className="text-white">
@@ -91,9 +124,15 @@ function SecondSection() {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="w-full px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="w-full px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center"
+          >
             <div className="md:w-[30rem] h-[25rem] card green">
               <div className="pt-8 px-8">
                 <h3 className="font-bold text-3xl">
@@ -105,7 +144,14 @@ function SecondSection() {
                 </p>
               </div>
             </div>
-            <div className="md:w-[45rem] h-[25rem] card purple overflow-hidden ">
+            <motion.div
+              layout
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="md:w-[45rem] h-[25rem] card purple overflow-hidden "
+            >
               <div className="pt-8 px-8">
                 <h3 className="font-bold text-3xl">
                   Any Platform, Every Possibility
@@ -131,8 +177,8 @@ function SecondSection() {
                   className="lg:w-[10vw] w-[40%] rotate-12 absolute lg:right-12 right-16 xl:w-[30%] xl:right-20 xl:pr-5"
                 />
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
