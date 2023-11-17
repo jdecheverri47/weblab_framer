@@ -237,9 +237,9 @@ function PricingSection() {
               </div>
             </div>
             <div className="flex justify-center items-center px-2">
-              <button className="text-white hover:bg-blue-500  font-bold w-full py-2.5 rounded-[18px] mt-5 md:mt-8 gradient_button hover:text-opacity-60 transition-all duration-300 ease-in-out">
+              <a className="text-white hover:bg-blue-500  font-bold w-full py-2.5 rounded-[18px] mt-5 md:mt-8 gradient_button hover:text-opacity-60 transition-all duration-300 ease-in-out" href="#contact">
                 Contact Us
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
