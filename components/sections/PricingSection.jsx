@@ -1,19 +1,49 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function PricingSection() {
   return (
     <section className="pt-10">
       <div>
         <div className="flex flex-col justify-center items-start md:items-center h-full px-8">
-          <h3 className="gradient_bullet_text text-2xl md:text-3xl font-bold">Pricing</h3>
-          <h2 className="text-4xl md:text-5xl font-bold mt-5">Custom Pricing, Your Way!</h2>
-          <p className="text-xl md:text-2xl lg:text-center mt-4 md:max-w-3xl text-[#BFB1E3]">
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="gradient_bullet_text text-2xl md:text-3xl font-bold"
+          >
+            Pricing
+          </motion.h3>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 1 }}
+            className="text-4xl md:text-5xl font-bold mt-5"
+          >
+            Custom Pricing, Your Way!
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 1.5 }}
+            className="text-xl md:text-2xl lg:text-center mt-4 md:max-w-3xl text-[#BFB1E3]"
+          >
             We offer a variety of pricing options to fit your specific needs.
-          </p>
+          </motion.p>
         </div>
 
         <div className="flex lg:flex-row flex-col justify-center items-center gap-8 pt-10 px-5">
-          <div className="card bg-white w-[85%] h-[28.5rem] md:w-[24rem] md:h-[30rem] px-6">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 2 }}
+            className="card bg-white w-[85%] h-[28.5rem] md:w-[24rem] md:h-[30rem] px-6"
+          >
             <div className="pt-6">
               <h2 className="font-medium text-2xl text-[#222222]">
                 Website Pro Builder
@@ -107,14 +137,19 @@ function PricingSection() {
                 Get now!
               </button>
             </div>
-          </div>
-          <div className="card bg-white w-[85%] h-[30rem] md:w-[24rem] px-3">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 2 }}
+            className="card bg-white w-[85%] h-[30rem] md:w-[24rem] px-3"
+          >
             <div className="pt-6 px-3">
-              <h2 className="font-medium text-2xl text-[#222222]">
-                FlexiPlan
-              </h2>
+              <h2 className="font-medium text-2xl text-[#222222]">FlexiPlan</h2>
               <p className="text-gray-500 text-xl">
-                The perfect fit if you need a web/mobile app, or a bigger project.
+                The perfect fit if you need a web/mobile app, or a bigger
+                project.
               </p>
             </div>
             <div className="py-3 px-2">
@@ -142,7 +177,9 @@ function PricingSection() {
                   height={256}
                   className="w-[1.2rem] h-[1.2rem]"
                 />
-                <p className="text-md text-gray-500">Dedicated Project Manager</p>
+                <p className="text-md text-gray-500">
+                  Dedicated Project Manager
+                </p>
               </div>
               <div className="flex gap-3 justify-start items-center">
                 <Image
@@ -172,8 +209,18 @@ function PricingSection() {
                   height={256}
                   className="w-[1.2rem] h-[1.2rem]"
                 />
+                <p className="text-md text-gray-500">Custom Quote System</p>
+              </div>
+              <div className="flex gap-3 justify-start items-center">
+                <Image
+                  alt=""
+                  src="/images/garrapata.png"
+                  width={256}
+                  height={256}
+                  className="w-[1.2rem] h-[1.2rem]"
+                />
                 <p className="text-md text-gray-500">
-                Custom Quote System
+                  Flexible Payment Options
                 </p>
               </div>
               <div className="flex gap-3 justify-start items-center">
@@ -184,17 +231,9 @@ function PricingSection() {
                   height={256}
                   className="w-[1.2rem] h-[1.2rem]"
                 />
-                <p className="text-md text-gray-500">Flexible Payment Options</p>
-              </div>
-              <div className="flex gap-3 justify-start items-center">
-                <Image
-                  alt=""
-                  src="/images/garrapata.png"
-                  width={256}
-                  height={256}
-                  className="w-[1.2rem] h-[1.2rem]"
-                />
-                <p className="text-md text-gray-500">Comprehensive Consultation</p>
+                <p className="text-md text-gray-500">
+                  Comprehensive Consultation
+                </p>
               </div>
             </div>
             <div className="flex justify-center items-center px-2">
@@ -202,8 +241,7 @@ function PricingSection() {
                 Contact Us
               </button>
             </div>
-          </div>
-          
+          </motion.div>
         </div>
       </div>
     </section>
