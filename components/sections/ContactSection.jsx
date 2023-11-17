@@ -24,7 +24,7 @@ function ContactSection() {
     reset();
   };
   return (
-    <section className="pt-14 lg:pt-8">
+    <section className="pt-14 lg:pt-8" id="contact">
       <div className="flex flex-col justify-center items-center px-5">
 
         <div className="lg:px-[10vw] px-3 md:px-8 flex flex-col justify-center md:items-center items-start md:pt-10 w-full">

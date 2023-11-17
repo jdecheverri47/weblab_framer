@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function ThirdSection() {
   return (
-    <section className="pt-12">
+    <section className="pt-12" id="services">
       <div className="lg:px-[10vw] px-8 flex flex-col justify-center md:items-center items-start pt-10">
         <motion.h3
           initial={{ opacity: 0 }}

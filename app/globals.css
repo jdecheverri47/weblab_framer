@@ -38,6 +38,10 @@
   --bgcolor: #c83bb1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #0a0517;
   color: #fff;

@@ -38,7 +38,7 @@ function FirstSection() {
   // }, [])
 
   return (
-    <section className="overflow-hidden h-screen" ref={sectionRef}>
+    <section className="overflow-hidden h-screen" ref={sectionRef} id="home">
       <div className="circle overflow-hidden" />
       <div className="flex flex-col justify-center items-center h-full w-screen">
         <motion.h1

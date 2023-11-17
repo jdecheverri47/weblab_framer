@@ -5,7 +5,7 @@ import WindowMacOs from "../ui/WindowMacOs";
 
 function SecondSection() {
   return (
-    <section className="h-fit">
+    <section className="h-fit pt-14" id="benefits">
       <div>
         <div className="flex flex-col justify-center md:items-center items-start gap-4 px-2">
           <motion.h3

@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 function PricingSection() {
   return (
-    <section className="pt-10">
-      <div>
+    <section className="pt-14" id="pricing">
+      <div className="pt-10">
         <div className="flex flex-col justify-center items-start md:items-center h-full px-8">
           <motion.h3
             initial={{ opacity: 0 }}
