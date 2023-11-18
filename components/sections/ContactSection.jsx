@@ -39,7 +39,7 @@ function ContactSection() {
           </p>
         </div>
 
-        <div className="md:w-[75vw] lg:w-[60vw] h-full bg-[#1c162c] rounded-[16px] contact_card mt-10 w-[90%]">
+        <div className="md:w-[75vw] lg:w-[80vw] h-full bg-[#1c162c] rounded-[16px] contact_card mt-10 w-[90%]">
           <div className="w-full h-full overflow-hidden lg:grid lg:grid-cols-2">
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col justify-start items-start md:items-center lg:items-start bg-[#fafafa] md:w-full lg:h-[92%] lg:w-[90%] lg:rounded-[16px] bg_contact px-4 py-5 rounded-t-[16px] md:py-20">

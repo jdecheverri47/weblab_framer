@@ -286,7 +286,7 @@ text {
   font-weight: 700;
 }
 
-@media (width < 1024px) {
+@media (width < 1444px) {
   section {
     height: fit-content;
   }
@@ -302,4 +302,6 @@ text {
     width: 18rem;
     height: 27rem;
   }
+
+
 }

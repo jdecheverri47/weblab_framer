@@ -38,7 +38,7 @@ function ThirdSection() {
           appeal.
         </motion.p>
       </div>
-      <div className="lg:grid lg:grid-cols-3 flex flex-col gap-4 md:w-[70%] lg:w-[75%] justify-center items-center pt-10 px-5 lg:px-10 lg:mx-auto lg:gap-0">
+      <div className="lg:grid lg:grid-cols-3 flex flex-col gap-4 md:w-[70%] lg:w-[75%] xl:w-[92%] justify-center items-center pt-10 px-5 lg:px-10 lg:mx-auto lg:gap-0">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}

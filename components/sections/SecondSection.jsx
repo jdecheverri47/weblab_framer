@@ -16,7 +16,7 @@ function SecondSection() {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasStarted) {
             setHasStarted(true);
-            setValue(1); // Inicia la animación
+            setValue(20); // Inicia la animación
           }
         });
       },
@@ -166,7 +166,7 @@ function SecondSection() {
             </motion.div>
           </div>
 
-          <div className="w-full px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
+          <div className="w-full h-fit px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -174,7 +174,7 @@ function SecondSection() {
               transition={{ duration: 1, delay: 1 }}
               className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
             >
-              <div className="md:w-[30rem] h-[25rem] card green">
+              <div className="md:w-[30rem] h-[30rem] md:h-[25rem] card green">
                 <div className="pt-8 px-8">
                   <h3 className="font-bold text-3xl">
                     Uninterrupted Support and Maintenance
@@ -218,14 +218,14 @@ function SecondSection() {
                     src="/images/android_mockup.png"
                     width={1939}
                     height={2046}
-                    className="lg:w-[10vw] w-[80%] rotate-12 absolute -left-2 xl:w-[55%] xl:left-10 pt-4 "
+                    className="lg:w-[10vw] w-[80%] rotate-12 absolute left-1 xl:w-[55%] xl:left-10 pt-4 "
                   />
                   <Image
                     alt=""
                     src="/images/iphone_mockup.png"
                     height={2048}
                     width={831}
-                    className="lg:w-[10vw] w-[40%] rotate-12 absolute lg:right-12 right-16 xl:w-[30%] xl:right-20 xl:pr-5"
+                    className="lg:w-[10vw] w-[40%] rotate-12 absolute lg:right-12 right-14 xl:w-[30%] xl:right-20 xl:pr-5"
                   />
                 </div>
               </div>

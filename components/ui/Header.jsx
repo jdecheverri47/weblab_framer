@@ -58,7 +58,7 @@ function Header() {
       }`}
     >
       <nav
-        className={`flex px-[4vw] justify-center xl:justify-between items-center transition-all duration-300 ease-in-out stroke ${
+        className={`flex px-[4vw] justify-center lg:justify-between items-center transition-all duration-300 ease-in-out stroke ${
           scrolled ? "py-3" : "py-6"
         }`}
       >
