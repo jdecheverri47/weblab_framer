@@ -46,7 +46,7 @@ function FirstSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="font-bold 2xl:text-9xl 2xl:max-w-7xl text-center gradient_text 2xl:h-[8.3rem] xl:text-8xl xl:h-[7.5rem] lg:text-7xl lg:h-[6.5rem] md:text-6xl md:h-[5.5rem] sm:text-5xl sm:h-[4.5rem] text-5xl h-[6rem]"
+          className="font-bold 2xl:text-9xl 2xl:max-w-7xl text-center gradient_text 2xl:h-[8.3rem] xl:text-8xl xl:h-[7.5rem] lg:text-7xl lg:h-[6.5rem] md:text-6xl md:h-[5.5rem] sm:text-5xl sm:h-[4.5rem] text-6xl h-[7rem]"
         >
           Designing the Future
         </motion.h1>
@@ -54,7 +54,7 @@ function FirstSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
-          className="font-bold text-5xl 2xl:text-9xl  2xl:max-w-4xl text-center xl:text-8xl xl:h-[7.5rem] lg:text-7xl lg:h-[6.5rem] md:text-6xl md:h-[5.5rem] sm:text-5xl sm:h-[4.5rem] h-[4rem] "
+          className="font-bold text-6xl 2xl:text-9xl  2xl:max-w-4xl text-center xl:text-8xl xl:h-[7.5rem] lg:text-7xl lg:h-[6.5rem] md:text-6xl md:h-[5.5rem] sm:text-5xl sm:h-[4.5rem] h-[4rem] "
         >
           of the Web
         </motion.h1>
@@ -62,11 +62,9 @@ function FirstSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 1 }}
-          className="xl:text-2xl text-center mt-4 xl:max-w-3xl text-[#BFB1E3] text-md px-5"
+          className="xl:text-2xl text-center lg:mt-4 xl:max-w-3xl text-[#BFB1E3] text-lg px-5"
         >
-          We build the best websites and apps for your business, ensuring a
-          seamless blend of functionality, aesthetics, and user experience that
-          sets you apart in the digital landscape.
+          We build the best websites and apps for your business.
         </motion.p>
         <motion.button
           initial={{ opacity: 0 }}
