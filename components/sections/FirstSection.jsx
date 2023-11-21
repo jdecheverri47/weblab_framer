@@ -34,7 +34,7 @@ function FirstSection() {
         animation: tl,
         trigger: section,
         start: "top top",
-        end: "+=800",
+        end: "+=1000",
         scrub: 1,
         pin: true,
         pinSpacing: false,
