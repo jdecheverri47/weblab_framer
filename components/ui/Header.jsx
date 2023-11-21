@@ -24,34 +24,37 @@ function Header() {
       id: 4,
       text: "Pricing",
       dataName: "pricing",
-    }
+    },
   ];
 
   return (
-    <header
-      className={`text-white walsheim fixed w-full z-30`}
-    >
+    <header className={`text-white walsheim fixed w-full z-30`}>
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, delay: 2 }}
-
-        className={`w-1/2 flex px-2 justify-center lg:justify-between items-center stroke mx-auto border border-[#3561b1] rounded-full py-2 backdropp mt-2 shadow-md`}
+        className={`w-1/4 lg:w-1/2 flex px-2 justify-center lg:justify-between items-center stroke mx-auto border border-[#3561b1] rounded-full py-2 backdropp mt-2 shadow-md`}
       >
-        <a href="/" >
+        <a href="/">
           <Image
             src="/images/weblab_light.png"
             alt="logo"
             width={2563}
             height={614}
             priority={true}
-            className={`w-[6rem] lg:pl-4`}
+            className={`w-[6rem] lg:pl-4 lg:block hidden`}
           />
         </a>
 
-        <ul
-          className={`lg:flex items-center space-x-8 hidden px-4`}
-        >
+        <Image
+          src="/images/logo_image_light.png"
+          alt="logo"
+          width={348}
+          height={212}
+          className="w-[3rem] lg:hidden"
+        />
+
+        <ul className={`lg:flex items-center space-x-8 hidden px-4`}>
           {menuItems.map((item) => (
             <li key={item.id}>
               <a href={`#${item.dataName}`}>
@@ -64,8 +67,10 @@ function Header() {
           <span className="bubble"></span>
         </ul>
 
-
-        <a className="hidden lg:block text-white px-6 py-2 rounded-full gradient_button_navbar hover:text-opacity-60 transition-all duration-300 ease-in-out text-md tracking-tighter" href='#contact'>
+        <a
+          className="hidden lg:block text-white px-6 py-2 rounded-full gradient_button_navbar hover:text-opacity-60 transition-all duration-300 ease-in-out text-md tracking-tighter"
+          href="#contact"
+        >
           Contact Us
         </a>
       </motion.nav>

@@ -105,7 +105,7 @@ function SecondSection() {
               </p>
             </motion.div>
           </div>
-          <div className="w-full px-10 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
+          <div className="w-full px-5 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
             <motion.div
               initial={{ opacity: 0, x: -80, y: 80 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
@@ -194,7 +194,7 @@ function SecondSection() {
             </motion.div>
           </div>
 
-          <div className="w-full h-fit px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
+          <div className="w-full h-fit px-5 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
             <motion.div
               initial={{ opacity: 0, x: -80, y: 80 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}

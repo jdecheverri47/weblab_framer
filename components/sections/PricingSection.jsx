@@ -27,7 +27,7 @@ function PricingSection() {
           </motion.p>
         </div>
 
-        <div className="flex lg:flex-row flex-col justify-center items-center gap-8 pt-10 px-5">
+        <div className="flex lg:flex-row flex-col justify-center items-center gap-8 pt-10 ">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}

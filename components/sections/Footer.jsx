@@ -10,14 +10,21 @@ function Footer() {
             alt="logo"
             width={2563}
             height={614}
-            className={`w-[6rem]`}
+            className="w-[6rem]"
           />
+
+          
+
           <div className="flex gap-8">
             <a>
-              <p className="text-white text-sm md:text-lg mt-5">Privacy Policy</p>
+              <p className="text-white text-sm md:text-lg mt-5">
+                Privacy Policy
+              </p>
             </a>
             <a>
-              <p className="text-white text-sm md:text-lg mt-5">Terms of Service</p>
+              <p className="text-white text-sm md:text-lg mt-5">
+                Terms of Service
+              </p>
             </a>
           </div>
           <p className="text-white text-sm md:text-lg mt-5">
@@ -26,7 +33,6 @@ function Footer() {
         </div>
         <div className="col-start-9 col-span-2 mt-5">
           <div className="flex gap-8 mt-5 justify-center items-center w-full md:items-start">
-
             <a href="https://twitter.com/weblabcreative">
               <Image
                 src="/images/x.png"
