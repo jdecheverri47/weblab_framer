@@ -10,10 +10,10 @@ export default function Home() {
     <main>
       <FirstSection />
       <SecondSection />
-      {/* <ThirdSection />
+      <ThirdSection />
       <PricingSection />
       <ContactSection />
-      <Footer /> */}
+      <Footer />
     </main>
   )
 }
