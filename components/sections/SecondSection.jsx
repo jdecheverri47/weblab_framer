@@ -75,7 +75,7 @@ function SecondSection() {
   }, []);
   return (
     <section
-      className="h-fit pt-14 pb-10 "
+      className="h-fit pt-14 pb-10 overflow-x-hidden"
       id="benefits"
     >
       <motion.div>
