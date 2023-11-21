@@ -21,7 +21,7 @@ function PricingSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 1.5 }}
-            className="text-xl md:text-2xl lg:text-center mt-2 md:max-w-3xl text-[#BFB1E3]"
+            className="text-xl md:text-2xl lg:text-center mt-2 md:max-w-3xl"
           >
             We offer a variety of pricing options to fit your specific needs.
           </motion.p>
