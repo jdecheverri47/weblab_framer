@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function PricingSection() {
   return (
-    <section className="pt-[10rem] overflow-x-hidden" id="pricing">
+    <section className="pt-[8rem] overflow-x-hidden" id="pricing">
       <div>
         <div className="flex flex-col justify-center items-start md:items-center h-full px-8">
           {/* <motion.h3
