@@ -3,6 +3,7 @@
 import { collection, addDoc } from "@firebase/firestore";
 import db from "../../firebase";
 import { useForm, FormProvider } from "react-hook-form";
+import { motion } from "framer-motion";
 
 function ContactSection() {
   const { register, handleSubmit, reset } = useForm();
@@ -24,22 +25,39 @@ function ContactSection() {
     reset();
   };
   return (
-    <section className="pt-14 lg:pt-8" id="contact">
+    <section className="mt-[10rem] lg:pt-8" id="contact">
       <div className="flex flex-col justify-center items-center px-5">
-
         <div className="lg:px-[10vw] px-3 md:px-8 flex flex-col justify-center md:items-center items-start md:pt-10 w-full">
-          <h3 className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center xl:text-4xl">
+          {/* <h3 className="gradient_text text-2xl md:text-3xl font-bold text-center xl:text-4xl">
             Contact
-          </h3>
-          <h2 className="text-4xl xl:text-7xl md:text-5xl md:text-center font-bold mt-4">
-            Reach Out Today
-          </h2>
-          <p className="md:max-w-2xl md:text-center text-lg md:text-xl md:pt-2">
+          </h3> */}
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2 }}
+            className="text-4xl xl:text-7xl md:text-5xl md:text-center font-bold mt-4"
+          >
+            Reach Out <strong>Today</strong>
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 2, delay: 0.5 }}
+            className="md:max-w-2xl md:text-center text-lg md:text-xl md:pt-2"
+          >
             We&apos;re Just a Message Away
-          </p>
+          </motion.p>
         </div>
 
-        <div className="md:w-[75vw] lg:w-[80vw] xl:w-[70vw] h-full bg-[#1c162c] rounded-[16px] contact_card mt-10 w-[90%]">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 2, delay: 1.2 }}
+          className="md:w-[75vw] lg:w-[80vw] xl:w-[70vw] h-full bg-[#1c162c] rounded-[16px] contact_card mt-10 w-[100%]"
+        >
           <div className="w-full h-full overflow-hidden lg:grid lg:grid-cols-2">
             <div className="flex flex-col justify-center items-center">
               <div className="flex flex-col justify-start items-start md:items-center lg:items-start bg-[#fafafa] md:w-full lg:h-[92%] lg:w-[90%] lg:rounded-[16px] bg_contact px-4 py-5 rounded-t-[16px] md:py-20">
@@ -57,7 +75,7 @@ function ContactSection() {
                   {...register("name")}
                   type="text"
                   placeholder="Name"
-                  className="input_contact mt-5 "
+                  className="input_contact mt-5  "
                 />
                 <input
                   {...register("email")}
@@ -98,7 +116,7 @@ function ContactSection() {
               </form>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

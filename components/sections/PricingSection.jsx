@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 
 function PricingSection() {
   return (
-    <section className="pt-14" id="pricing">
-      <div className="pt-10">
+    <section className="pt-[10rem] overflow-x-hidden" id="pricing">
+      <div>
         <div className="flex flex-col justify-center items-start md:items-center h-full px-8">
-          <motion.h3
+          {/* <motion.h3
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="gradient_bullet_text text-2xl md:text-3xl font-bold xl:text-4xl"
+            className="gradient_text text-2xl md:text-3xl font-bold xl:text-4xl"
           >
             Pricing
-          </motion.h3>
+          </motion.h3> */}
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -23,7 +23,7 @@ function PricingSection() {
             transition={{ duration: 1, delay: 1 }}
             className="text-4xl md:text-5xl font-bold mt-5 xl:text-7xl"
           >
-            Custom Pricing, Your Way!
+            <strong>Custom</strong> Pricing, <strong>Your</strong> Way!
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}

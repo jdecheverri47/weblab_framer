@@ -5,17 +5,9 @@ import { motion } from "framer-motion";
 
 function ThirdSection() {
   return (
-    <section className="pt-12" id="services">
-      <div className="lg:px-[10vw] px-8 flex flex-col justify-center md:items-center items-start pt-10">
-        <motion.h3
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="gradient_bullet_text text-2xl md:text-3xl font-bold text-center xl:text-4xl "
-        >
-          Services
-        </motion.h3>
+    <section className="pt-[10rem] overflow-x-hidden" id="services">
+      <div className="lg:px-[10vw] px-8 flex flex-col justify-center md:items-center items-start">
+        
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -23,7 +15,7 @@ function ThirdSection() {
           transition={{ duration: 1, delay: 1 }}
           className="text-4xl md:text-5xl md:text-center font-bold mt-4 xl:text-7xl"
         >
-          Where Technology Meets Creativity
+          Where <strong>Technology</strong> Meets <strong>Creativity</strong>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -38,7 +30,7 @@ function ThirdSection() {
           appeal.
         </motion.p>
       </div>
-      <div className="lg:grid lg:grid-cols-3 flex flex-col gap-4 md:w-[70%] lg:w-[75%] xl:w-[92%] 2xl:w-[80%] justify-center items-center pt-10 px-5 lg:px-10 lg:mx-auto lg:gap-0">
+      <div className="lg:grid lg:grid-cols-3 flex flex-col gap-4 md:w-[70%] lg:w-[75%] xl:w-[92%] 2xl:w-[75%] justify-center items-center pt-10 px-5 lg:px-10 lg:mx-auto lg:gap-0">
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}

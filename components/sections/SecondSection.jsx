@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import WindowMacOs from "../ui/WindowMacOs";
 import CircularProgressBar from "../ui/CircularProgressBar";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 function SecondSection() {
   const [value, setValue] = useState(0);
   const [hasStarted, setHasStarted] = useState(false);
@@ -40,47 +44,73 @@ function SecondSection() {
       return () => clearTimeout(timeout);
     }
   }, [hasStarted, value]);
+
+  const containerRef = useRef();
+  const sectionRef = useRef();
+  const androidRef = useRef();
+  const iosRef = useRef();
+  useEffect(() => {
+    const section = sectionRef.current;
+    const container = containerRef.current;
+    const android = androidRef.current;
+    const ios = iosRef.current;
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline();
+      tl.to(android, { xPercent: 8, scale: 1.1, duration: 2 }, 0);
+      tl.to(ios, { xPercent: -12, scale: 1.1, duration: 2 }, 0);
+
+      ScrollTrigger.create({
+        animation: tl,
+        trigger: container,
+        start: "top center",
+        end: "+=300",
+        scrub: 1,
+        anticipatePin: 1,
+        // markers: true,
+      });
+    }, section);
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
   return (
-    <section className="h-fit pt-14" id="benefits">
-      <div>
+    <section
+      className="h-fit pt-14 pb-10 overflow-x-hidden"
+      id="benefits"
+      ref={sectionRef}
+    >
+      <motion.div>
         <div className="flex flex-col justify-center md:items-center items-start gap-4 px-2">
-          <motion.h3
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5 }}
-            // transition={{ duration: 1, delay:2 }}
-            className="gradient_bullet_text text-xl md:text-2xl xl:text-4xl font-bold pl-5"
-          >
-            Benefits
-          </motion.h3>
-          <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5 xl:text-7xl"
-          >
-            Tailored Benefits for Your Web Needs
-          </motion.h2>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="flex flex-col md:pt-5 lg:mx-10 mx-5 lg:pt-0"
-          >
-            <p className="max-w-2xl text-lg md:text-xl lg:text-center">
-              Explore a range of benefits designed to elevate your web presence.
-              Our tailored solutions offer enhanced usability, efficiency, and
-              innovative features to fit your specific online needs. Experience
-              the difference in every click.
-            </p>
-          </motion.div>
+          <div className="flex flex-col justify-center items-center">
+            <motion.h2
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5 xl:text-7xl mt-5"
+            >
+              Tailored <strong>Benefits</strong> for Your Web Needs
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="flex flex-col md:pt-5 lg:mx-10 mx-5 lg:pt-0 mt-2"
+            >
+              <p className="max-w-2xl text-lg md:text-xl lg:text-center">
+                Explore a range of benefits designed to elevate your web
+                presence. Our tailored solutions offer enhanced usability,
+                efficiency, and innovative features to fit your specific online
+                needs. Experience the difference in every click.
+              </p>
+            </motion.div>
+          </div>
           <div className="w-full px-10 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -80, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1 }}
               className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
@@ -137,8 +167,8 @@ function SecondSection() {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 80, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1 }}
               className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
@@ -168,8 +198,8 @@ function SecondSection() {
 
           <div className="w-full h-fit px-10 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -80, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1 }}
               className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
@@ -196,8 +226,8 @@ function SecondSection() {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 80, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 1 }}
               className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
@@ -212,27 +242,32 @@ function SecondSection() {
                     any device, any operating system, without limits.
                   </p>
                 </div>
-                <div className="md:px-10 md:pt-5 pt-3 flex w-full md:gap-8 relative">
+                <div
+                  className="md:px-10 md:pt-5 pt-3 flex w-full md:gap-8 relative"
+                  ref={containerRef}
+                >
                   <Image
                     alt=""
                     src="/images/android_mockup.png"
                     width={1939}
                     height={2046}
-                    className="lg:w-[10vw] w-[80%] rotate-12 absolute left-1 xl:w-[55%] xl:left-10 pt-4 "
+                    className="lg:w-[10vw] w-[80%] rotate-12 absolute left-1 xl:w-[55%]  pt-4 "
+                    ref={androidRef}
                   />
                   <Image
                     alt=""
                     src="/images/iphone_mockup.png"
                     height={2048}
                     width={831}
-                    className="lg:w-[10vw] w-[40%] rotate-12 absolute lg:right-12 right-14 xl:w-[30%] xl:right-20 xl:pr-5"
+                    className="lg:w-[10vw] w-[40%] rotate-12 absolute lg:right-12 right-14 xl:w-[30%] xl:right-[6rem] pt-5"
+                    ref={iosRef}
                   />
                 </div>
               </div>
             </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

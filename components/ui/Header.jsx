@@ -1,9 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import MenuButton from "./MenuButton";
 import { useState, useEffect } from "react";
-import Menu from "./Menu";
+import { motion } from "framer-motion";
 
 function Header() {
   const menuItems = [
@@ -53,14 +52,16 @@ function Header() {
 
   return (
     <header
-      className={`text-white walsheim fixed w-full z-30 transition-all duration-300 ease-in-out backdropp ${
+      className={`text-white walsheim fixed w-full z-30 ${
         scrolled ? " " : ""
       }`}
     >
-      <nav
-        className={`flex px-[4vw] justify-center lg:justify-between items-center transition-all duration-300 ease-in-out stroke ${
-          scrolled ? "py-3" : "py-6"
-        }`}
+      <motion.nav
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, delay: 2 }}
+
+        className={`w-1/2 flex px-2 justify-center lg:justify-between items-center stroke mx-auto border border-[#3561b1] rounded-full py-2 backdropp mt-2 shadow-md`}
       >
         <a href="/" className={`${menuOpen ? "opacity-0" : ""}`}>
           <Image
@@ -69,30 +70,32 @@ function Header() {
             width={2563}
             height={614}
             priority={true}
-            className={`w-[8rem]`}
+            className={`w-[6rem] pl-4`}
           />
         </a>
 
         <ul
-          className={`lg:flex items-center space-x-8 hidden`}
+          className={`lg:flex items-center space-x-8 hidden px-4`}
         >
           {menuItems.map((item) => (
             <li key={item.id}>
               <a href={`#${item.dataName}`}>
-                <h1 className="font-regular text-lg hover:text-gray-400 transition-all ease-in-out ">
+                <h1 className="font-normal text-md tracking-tighter p-1 rounded-2xl">
                   {item.text}
                 </h1>
               </a>
             </li>
           ))}
+          <span className="bubble"></span>
         </ul>
 
-        <a className="hidden lg:block text-white px-4 py-2 rounded-full gradient_button_navbar hover:text-opacity-60 transition-all duration-300 ease-in-out" href='#contact'>
+
+        <a className="hidden lg:block text-white px-6 py-2 rounded-full gradient_button_navbar hover:text-opacity-60 transition-all duration-300 ease-in-out text-md tracking-tighter" href='#contact'>
           Contact Us
         </a>
         {/* <MenuButton isOpen={menuOpen} toggleMenu={toggleMenu} />
         <Menu isOpen={menuOpen} toggleMenu={toggleMenu} /> */}
-      </nav>
+      </motion.nav>
     </header>
   );
 }
