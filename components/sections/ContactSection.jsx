@@ -25,7 +25,7 @@ function ContactSection() {
     reset();
   };
   return (
-    <section className="mt-[8rem] lg:pt-8" id="contact">
+    <section className="mt-[6rem]" id="contact">
       <div className="flex flex-col justify-center items-center px-5">
         <div className="lg:px-[10vw] px-3 md:px-8 flex flex-col justify-center md:items-center items-start w-full">
           {/* <h3 className="gradient_text text-2xl md:text-3xl font-bold text-center xl:text-4xl">
