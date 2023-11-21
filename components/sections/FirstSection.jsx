@@ -55,7 +55,7 @@ function FirstSection() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="circle overflow-x-hidden"
-        // ref={circleRef}
+        ref={circleRef}
       />
       <div
         className="flex flex-col justify-center items-center h-full w-screen lg:px-20"
