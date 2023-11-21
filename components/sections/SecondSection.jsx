@@ -65,7 +65,7 @@ function SecondSection() {
         scrub: 1,
         anticipatePin: 1,
       });
-    }, section);
+    });
 
     return () => {
       ctx.revert();
