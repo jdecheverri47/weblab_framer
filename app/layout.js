@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 export const metadata = {
-  title: "WebLab - Software Development Agency",
+  title: "WebLab | Software Development Agency",
   description:
     "We are a software development agency that creates web and mobile applications for businesses and startups.",
 };

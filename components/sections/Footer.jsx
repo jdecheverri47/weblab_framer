@@ -24,26 +24,19 @@ function Footer() {
             ©2023 WebLab, LLC. All rights reserved.
           </p>
         </div>
-        <div className="col-start-7 col-span-2 mt-5">
-          <div>
-            <p className="text-white text-sm md:text-lg font-bold">Contact</p>
-            <p className="text-white text-sm md:text-lg">
-              1234 Main St. Suite 1234 City, State 12345
-            </p>
-            <p className="text-white text-sm md:text-lg">123-456-7890</p>
-          </div>
+        <div className="col-start-9 col-span-2 mt-5">
           <div className="flex gap-8 mt-5 justify-center items-center w-full md:items-start">
 
-            <a href="www.twitter.com">
+            <a href="https://twitter.com/weblabcreative">
               <Image
-                src="/images/gorjeo.png"
+                src="/images/x.png"
                 alt="logo"
                 width={512}
                 height={512}
                 className={`w-[1.4rem] md:w-[2rem]`}
               />
             </a>
-            <a>
+            <a href="https://www.instagram.com/weblab_creative/">
               <Image
                 src="/images/instagram.png"
                 alt="logo"
