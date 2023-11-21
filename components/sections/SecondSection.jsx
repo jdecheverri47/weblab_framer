@@ -15,6 +15,7 @@ function SecondSection() {
   const progressBarRef = useRef(null);
 
   useEffect(() => {
+    const progressBar = progressBarRef.current;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -32,8 +33,9 @@ function SecondSection() {
     }
 
     return () => {
-      if (progressBarRef.current) {
-        observer.unobserve(progressBarRef.current);
+
+      if (progressBar) {
+        observer.unobserve(progressBar);
       }
     };
   }, [hasStarted]);
