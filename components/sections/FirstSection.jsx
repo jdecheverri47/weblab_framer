@@ -51,9 +51,9 @@ function FirstSection() {
   return (
     <section className="overflow-hidden h-screen" ref={sectionRef} id="home">
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{ duration: 1 }}
         className="circle overflow-hidden"
         ref={circleRef}
       />

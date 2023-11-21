@@ -45,7 +45,7 @@ function Header() {
             width={2563}
             height={614}
             priority={true}
-            className={`w-[6rem] pl-4`}
+            className={`w-[6rem] lg:pl-4`}
           />
         </a>
 
