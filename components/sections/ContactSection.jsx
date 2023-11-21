@@ -2,7 +2,7 @@
 
 import { collection, addDoc } from "@firebase/firestore";
 import db from "../../firebase";
-import { useForm, FormProvider } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
 function ContactSection() {
@@ -28,9 +28,6 @@ function ContactSection() {
     <section className="mt-[6rem]" id="contact">
       <div className="flex flex-col justify-center items-center px-5">
         <div className="lg:px-[10vw] px-3 md:px-8 flex flex-col justify-center md:items-center items-start w-full">
-          {/* <h3 className="gradient_text text-2xl md:text-3xl font-bold text-center xl:text-4xl">
-            Contact
-          </h3> */}
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

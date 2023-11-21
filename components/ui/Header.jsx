@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 function Header() {
@@ -27,34 +26,10 @@ function Header() {
       dataName: "pricing",
     }
   ];
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   return (
     <header
-      className={`text-white walsheim fixed w-full z-30 ${
-        scrolled ? " " : ""
-      }`}
+      className={`text-white walsheim fixed w-full z-30`}
     >
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
@@ -63,7 +38,7 @@ function Header() {
 
         className={`w-1/2 flex px-2 justify-center lg:justify-between items-center stroke mx-auto border border-[#3561b1] rounded-full py-2 backdropp mt-2 shadow-md`}
       >
-        <a href="/" className={`${menuOpen ? "opacity-0" : ""}`}>
+        <a href="/" >
           <Image
             src="/images/weblab_light.png"
             alt="logo"
@@ -93,8 +68,6 @@ function Header() {
         <a className="hidden lg:block text-white px-6 py-2 rounded-full gradient_button_navbar hover:text-opacity-60 transition-all duration-300 ease-in-out text-md tracking-tighter" href='#contact'>
           Contact Us
         </a>
-        {/* <MenuButton isOpen={menuOpen} toggleMenu={toggleMenu} />
-        <Menu isOpen={menuOpen} toggleMenu={toggleMenu} /> */}
       </motion.nav>
     </header>
   );

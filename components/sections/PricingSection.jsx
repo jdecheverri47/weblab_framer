@@ -7,15 +7,6 @@ function PricingSection() {
     <section className="pt-[8rem] overflow-x-hidden" id="pricing">
       <div>
         <div className="flex flex-col justify-center items-start md:items-center h-full px-8">
-          {/* <motion.h3
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="gradient_text text-2xl md:text-3xl font-bold xl:text-4xl"
-          >
-            Pricing
-          </motion.h3> */}
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

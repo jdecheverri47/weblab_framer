@@ -29,7 +29,6 @@ function FirstSection() {
         { yPercent: -100, opacity: 0, scale: 0.7, duration: 2 },
         0
       );
-      // tl.from(right, {xPercent: 100, duration: 2})
 
       ScrollTrigger.create({
         animation: tl,

@@ -2,37 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: "Konnect";
-  src: url("/fonts/Konnect-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Konnect";
-  src: url("/fonts/Konnect-Bold.otf");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Konnect";
-  src: url("/fonts/Konnect-Medium.otf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Konnect";
-  src: url("/fonts/Konnect-SemiBold.otf");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-} */
 
 @font-face {
   font-family: "GT Walsheim Pro";
@@ -53,10 +22,6 @@
   font-style: normal;
   font-weight: 700;
   src: url("fonts/GTWalsheimPro-Bold.ttf");
-}
-
-:root {
-  --bgcolor: #c83bb1;
 }
 
 html {
@@ -94,14 +59,6 @@ ul {
 strong {
   background-color: #21d4fd;
   background-image: linear-gradient(75deg, #105fe7 0%, #64e9ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.gradient_text_orange {
-  background-color: #ffe53b;
-  background-image: linear-gradient(147deg, #ffdd00 60%, #ffa200 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,29 +148,6 @@ nav ul li:nth-child(4):hover ~ span.bubble {
   opacity: 0.5;
 }
 
-/* nav ul li a h1:hover {
-  box-shadow: inset 0 0 0 2px #ffffff88;
-  background: #ececec2c;
-  backdrop-filter: blur(10px);
-} */
-/* nav.stroke ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: #aaa;
-  height: 2px;
-  transition: all 0.3s ease-in-out;
-}
-nav.stroke ul li a:hover:after {
-  width: 100%;
-  transition: all 0.3s ease-in-out;
-} */
-
 .bg-grid {
   background-image: url("/images/grid.jpg");
   background-size: cover;
@@ -244,7 +178,6 @@ nav.stroke ul li a:hover:after {
   right: 50%;
   z-index: 0;
   transition: all 300ms ease;
-  /* filter: blur(100px); */
 }
 
 .card {
