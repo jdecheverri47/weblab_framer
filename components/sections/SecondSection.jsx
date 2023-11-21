@@ -46,11 +46,9 @@ function SecondSection() {
   }, [hasStarted, value]);
 
   const containerRef = useRef();
-  const sectionRef = useRef();
   const androidRef = useRef();
   const iosRef = useRef();
   useEffect(() => {
-    const section = sectionRef.current;
     const container = containerRef.current;
     const android = androidRef.current;
     const ios = iosRef.current;
@@ -66,7 +64,6 @@ function SecondSection() {
         end: "+=300",
         scrub: 1,
         anticipatePin: 1,
-        // markers: true,
       });
     }, section);
 
@@ -78,7 +75,6 @@ function SecondSection() {
     <section
       className="h-fit pt-14 pb-10 overflow-x-hidden"
       id="benefits"
-      ref={sectionRef}
     >
       <motion.div>
         <div className="flex flex-col justify-center md:items-center items-start gap-4 px-2">
