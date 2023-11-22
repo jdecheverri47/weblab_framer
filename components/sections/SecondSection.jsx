@@ -1,5 +1,8 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import pricingCardImage from "../../public/images/pricingcard.png";
+import androidPhone from "../../public/images/android_mockup.png";
+import iphoneMockup from "../../public/images/iphone_mockup.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import WindowMacOs from "../ui/WindowMacOs";
@@ -33,7 +36,6 @@ function SecondSection() {
     }
 
     return () => {
-
       if (progressBar) {
         observer.unobserve(progressBar);
       }
@@ -181,9 +183,7 @@ function SecondSection() {
                   <div className="flex justify-center items-center">
                     <Image
                       alt="pricing card"
-                      src="/images/pricingcard.png"
-                      width={1432}
-                      height={1520}
+                      src={pricingCardImage}
                       className="w-[15rem] lg:w-[20rem]"
                       priority={true}
                       quality={100}
@@ -246,15 +246,13 @@ function SecondSection() {
                 >
                   <Image
                     alt=""
-                    src="/images/android_mockup.png"
-                    width={1939}
-                    height={2046}
+                    src={androidPhone}
                     className="lg:w-[10vw] w-[80%] rotate-12 absolute left-1 xl:w-[55%]  pt-4 "
                     ref={androidRef}
                   />
                   <Image
                     alt=""
-                    src="/images/iphone_mockup.png"
+                    src={iphoneMockup}
                     height={2048}
                     width={831}
                     className="lg:w-[10vw] w-[40%] rotate-12 absolute lg:right-12 right-14 xl:w-[30%] xl:right-[6rem] pt-5"
