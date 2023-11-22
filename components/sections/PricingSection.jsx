@@ -124,7 +124,7 @@ function PricingSection() {
               </div>
             </div>
             <div className="flex justify-center items-center">
-              <a href="#contact" className="text-white hover:bg-blue-500  font-bold w-full py-2.5 rounded-[18px] mt-5 gradient_button hover:text-opacity-60 transition-all duration-300 ease-in-out">
+              <a href="https://biz.payulatam.com/B0f439fF7150957" className="text-white hover:bg-blue-500  font-bold w-full py-2.5 rounded-[18px] mt-5 gradient_button hover:text-opacity-60 transition-all duration-300 ease-in-out">
                 Get now!
               </a>
             </div>
