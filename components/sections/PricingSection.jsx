@@ -8,19 +8,19 @@ function PricingSection() {
       <div>
         <div className="flex flex-col justify-center items-start md:items-center h-full px-8">
           <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1 }}
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 1, delay: 1 }}
             className="text-4xl md:text-5xl font-bold mt-5 xl:text-7xl"
           >
             <strong>Custom</strong> Pricing, <strong>Your</strong> Way!
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 1.5 }}
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 1, delay: 1.5 }}
             className="text-xl md:text-2xl lg:text-center mt-2 md:max-w-3xl"
           >
             We offer a variety of pricing options to fit your specific needs.
@@ -29,10 +29,10 @@ function PricingSection() {
 
         <div className="flex lg:flex-row flex-col justify-center items-center gap-8 pt-10 ">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 2 }}
+            // initial={{ opacity: 0, x: -50 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 1, delay: 2 }}
             className="card bg-white w-[85%] h-[28.5rem] md:w-[24rem] md:h-[30rem] px-6"
           >
             <div className="pt-6">
@@ -130,10 +130,10 @@ function PricingSection() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 2 }}
+            // initial={{ opacity: 0, x: 50 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 1, delay: 2 }}
             className="card bg-white w-[85%] h-[30rem] md:w-[24rem] px-3"
           >
             <div className="pt-6 px-3">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="w-full h-[22rem] lg:h-[20rem] bg-[#0a0517] flex justify-center items-center md:justify-start lg:items-center md:px-[10vw]">
+    <footer className="w-full h-[22rem] lg:h-[20rem] bg-black flex justify-center items-center md:justify-start lg:items-center md:px-[10vw]">
       <div className="lg:grid lg:grid-cols-8 justify-items-stretch  items-center">
         <div className="flex flex-col items-center md:items-start col-span-2">
           <Image
@@ -12,8 +12,6 @@ function Footer() {
             height={614}
             className="w-[6rem]"
           />
-
-          
 
           <div className="flex gap-8">
             <a>
@@ -32,6 +30,10 @@ function Footer() {
           </p>
         </div>
         <div className="col-start-9 col-span-2 mt-5">
+          <p className="text-white text-sm md:text-lg">Contact Us</p>
+          <a href="mailto:sales@weblabcreative.com" className="text-white text-sm md:text-lg mt-2">
+            weblabcreative.com
+          </a>
           <div className="flex gap-8 mt-5 justify-center items-center w-full md:items-start">
             <a href="https://twitter.com/weblabcreative">
               <Image

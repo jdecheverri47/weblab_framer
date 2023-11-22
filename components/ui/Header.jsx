@@ -30,9 +30,9 @@ function Header() {
   return (
     <header className={`text-white walsheim fixed w-full z-30`}>
       <motion.nav
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, delay: 2 }}
+        // initial={{ opacity: 0, y: -20 }}
+        // animate={{ opacity: 1, y: 0 }}
+        // transition={{ duration: 2, delay: 2 }}
         className={`w-1/4 lg:w-1/2 flex px-2 justify-center lg:justify-between items-center stroke mx-auto border border-[#3561b1] rounded-full py-2 backdropp mt-2 shadow-md`}
       >
         <a href="/">

@@ -29,19 +29,19 @@ function ContactSection() {
       <div className="flex flex-col justify-center items-center px-5">
         <div className="lg:px-[10vw] px-3 md:px-8 flex flex-col justify-center md:items-center items-start w-full">
           <motion.h2
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2 }}
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2 }}
             className="text-4xl xl:text-7xl md:text-5xl md:text-center font-bold mt-4"
           >
             Reach Out <strong>Today</strong>
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 2, delay: 0.5 }}
+            // initial={{ opacity: 0 }}
+            // whileInView={{ opacity: 1 }}
+            // viewport={{ once: true }}
+            // transition={{ duration: 2, delay: 0.5 }}
             className="md:max-w-2xl md:text-center text-lg md:text-xl md:pt-2"
           >
             We&apos;re Just a Message Away
@@ -49,10 +49,10 @@ function ContactSection() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 2, delay: 1.2 }}
+          // initial={{ opacity: 0, y: 50 }}
+          // whileInView={{ opacity: 1, y: 0 }}
+          // viewport={{ once: true }}
+          // transition={{ duration: 2, delay: 1.2 }}
           className="md:w-[75vw] lg:w-[80vw] xl:w-[70vw] h-full bg-[#1c162c] rounded-[16px] contact_card mt-10 w-[100%]"
         >
           <div className="w-full h-full overflow-hidden lg:grid lg:grid-cols-2">

@@ -3,9 +3,9 @@ import React from "react";
 function WindowMacOs() {
   return (
     <svg
-      width="906"
+      width="556"
       height="471"
-      viewBox="0 0 906 471"
+      viewBox="0 0 556 471"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -13,8 +13,8 @@ function WindowMacOs() {
         <rect
           x="40.6191"
           y="32"
-          width="825.381"
-          height="391"
+          width="471"
+          height="491"
           rx="10"
           fill="white"
           shapeRendering="crispEdges"
@@ -74,7 +74,7 @@ function WindowMacOs() {
         strokeOpacity="0.2"
         strokeWidth="0.5"
       />
-      <path d="M40 86.2536H865.381" stroke="#D2D2D2" />
+      <path d="M40 86.2536H510.381" stroke="#D2D2D2" />
       <defs>
         <filter
           id="filter0_ddi_190_572"

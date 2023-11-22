@@ -1,16 +1,13 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import pricingCardImage from "../../public/images/pricingcard.png";
-import androidPhone from "../../public/images/android_mockup.png";
-import iphoneMockup from "../../public/images/iphone_mockup.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import WindowMacOs from "../ui/WindowMacOs";
-import CircularProgressBar from "../ui/CircularProgressBar";
 
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import CircularProgressBar from "../ui/CircularProgressBar";
+import PurpleCard from "../ui/PurpleCard";
+
 
 function SecondSection() {
   const [value, setValue] = useState(0);
@@ -24,7 +21,7 @@ function SecondSection() {
         entries.forEach((entry) => {
           if (entry.isIntersecting && !hasStarted) {
             setHasStarted(true);
-            setValue(20); // Inicia la animación
+            setValue(50); // Inicia la animación
           }
         });
       },
@@ -49,54 +46,28 @@ function SecondSection() {
     }
   }, [hasStarted, value]);
 
-  const containerRef = useRef();
-  const androidRef = useRef();
-  const iosRef = useRef();
-  useEffect(() => {
-    const container = containerRef.current;
-    const android = androidRef.current;
-    const ios = iosRef.current;
-    let ctx = gsap.context(() => {
-      const tl = gsap.timeline();
-      tl.to(android, { xPercent: 8, scale: 1.1, duration: 2 }, 0);
-      tl.to(ios, { xPercent: -12, scale: 1.1, duration: 2 }, 0);
-
-      ScrollTrigger.create({
-        animation: tl,
-        trigger: container,
-        start: "top center",
-        end: "+=300",
-        scrub: 1,
-        anticipatePin: 1,
-      });
-    });
-
-    return () => {
-      ctx.revert();
-    };
-  }, []);
   return (
     <section
-      className="h-fit overflow-x-hidden overflow-y-hidden pb-[10rem]"
+      className="h-fit overflow-x-hidden overflow-y-hidden pt-[7rem] pb-[10rem]"
       id="benefits"
     >
       <motion.div>
         <div className="flex flex-col justify-center md:items-center items-start gap-4 px-2">
           <div className="flex flex-col justify-center items-center">
             <motion.h2
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.5 }}
+              // initial={{ opacity: 0 }}
+              // whileInView={{ opacity: 1 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 1, delay: 0.5 }}
               className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5 xl:text-7xl mt-5"
             >
               Tailored <strong>Benefits</strong> for Your Web Needs
             </motion.h2>
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 0.5 }}
+              // initial={{ opacity: 0 }}
+              // whileInView={{ opacity: 1 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 1, delay: 0.5 }}
               className="flex flex-col md:pt-5 lg:mx-10 mx-5 lg:pt-0 mt-2"
             >
               <p className="max-w-2xl text-lg md:text-xl lg:text-center">
@@ -109,11 +80,11 @@ function SecondSection() {
           </div>
           <div className="w-full px-5 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
             <motion.div
-              initial={{ opacity: 0, x: -80, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1 }}
-              className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
+              // initial={{ opacity: 0, x: -80, y: 80 }}
+              // whileInView={{ opacity: 1, x: 0, y: 0 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 1, delay: 1 }}
+              className="bg-[#1f1f1f] p-1 rounded-[20px] shadow-lg"
             >
               <div className="md:w-[45rem] h-[25rem] card orange">
                 <div className="pt-8 px-8">
@@ -167,11 +138,11 @@ function SecondSection() {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, x: 80, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1 }}
-              className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
+              // initial={{ opacity: 0, x: 80, y: 80 }}
+              // whileInView={{ opacity: 1, x: 0, y: 0 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 1, delay: 1 }}
+              className="bg-[#1f1f1f] p-1 rounded-[20px] shadow-lg"
             >
               <div className="md:w-[30rem] h-[25rem] card blue">
                 <div className="pt-8 px-8">
@@ -184,7 +155,7 @@ function SecondSection() {
                     <Image
                       alt="pricing card"
                       src={pricingCardImage}
-                      className="w-[15rem] lg:w-[20rem]"
+                      className="w-[15rem] lg:w-[18rem]"
                       priority={true}
                       quality={100}
                     />
@@ -196,11 +167,11 @@ function SecondSection() {
 
           <div className="w-full h-fit px-5 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
             <motion.div
-              initial={{ opacity: 0, x: -80, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1 }}
-              className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
+              // initial={{ opacity: 0, x: -80, y: 80 }}
+              // whileInView={{ opacity: 1, x: 0, y: 0 }}
+              // viewport={{ once: true }}
+              // transition={{ duration: 1, delay: 1 }}
+              className="bg-[#1f1f1f] p-1 rounded-[20px] shadow-lg"
             >
               <div className="md:w-[30rem] h-[30rem] md:h-[25rem] card green">
                 <div className="pt-8 px-8">
@@ -223,44 +194,7 @@ function SecondSection() {
                 </div>
               </div>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 80, y: 80 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 1 }}
-              className="bg-[#262035] p-1 rounded-[20px] shadow-lg"
-            >
-              <div className="md:w-[45rem] h-[25rem] card purple overflow-hidden ">
-                <div className="pt-8 px-8">
-                  <h3 className="font-bold text-3xl">
-                    Any Platform, Every Possibility
-                  </h3>
-                  <p className="text-white">
-                    Our versatile development team brings your vision to life on
-                    any device, any operating system, without limits.
-                  </p>
-                </div>
-                <div
-                  className="md:px-10 md:pt-5 pt-3 flex w-full md:gap-8 relative"
-                  ref={containerRef}
-                >
-                  <Image
-                    alt=""
-                    src={androidPhone}
-                    className="lg:w-[10vw] w-[80%] rotate-12 absolute left-1 xl:w-[55%]  pt-4 "
-                    ref={androidRef}
-                  />
-                  <Image
-                    alt=""
-                    src={iphoneMockup}
-                    height={2048}
-                    width={831}
-                    className="lg:w-[10vw] w-[40%] rotate-12 absolute lg:right-12 right-14 xl:w-[30%] xl:right-[6rem] pt-5"
-                    ref={iosRef}
-                  />
-                </div>
-              </div>
-            </motion.div>
+            <PurpleCard />
           </div>
         </div>
       </motion.div>
