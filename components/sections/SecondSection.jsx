@@ -55,19 +55,19 @@ function SecondSection() {
         <div className="flex flex-col justify-center md:items-center items-start gap-4 px-2">
           <div className="flex flex-col justify-center items-center">
             <motion.h2
-              // initial={{ opacity: 0 }}
-              // whileInView={{ opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ duration: 1, delay: 0.5 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
               className="text-4xl md:text-5xl font-bold md:text-center lg:mx-10 mx-5 xl:text-7xl mt-5"
             >
               Tailored <strong>Benefits</strong> for Your Web Needs
             </motion.h2>
             <motion.div
-              // initial={{ opacity: 0 }}
-              // whileInView={{ opacity: 1 }}
-              // viewport={{ once: true }}
-              // transition={{ duration: 1, delay: 0.5 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 0.5 }}
               className="flex flex-col md:pt-5 lg:mx-10 mx-5 lg:pt-0 mt-2"
             >
               <p className="max-w-2xl text-lg md:text-xl lg:text-center">
@@ -80,10 +80,10 @@ function SecondSection() {
           </div>
           <div className="w-full px-5 flex flex-col md:flex-row gap-8 pt-8 lg:justify-center lg:items-center">
             <motion.div
-              // initial={{ opacity: 0, x: -80, y: 80 }}
-              // whileInView={{ opacity: 1, x: 0, y: 0 }}
-              // viewport={{ once: true }}
-              // transition={{ duration: 1, delay: 1 }}
+              initial={{ opacity: 0, x: -80, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
               className="bg-[#1f1f1f] p-1 rounded-[20px] shadow-lg"
             >
               <div className="md:w-[45rem] h-[25rem] card orange">
@@ -138,10 +138,10 @@ function SecondSection() {
               </div>
             </motion.div>
             <motion.div
-              // initial={{ opacity: 0, x: 80, y: 80 }}
-              // whileInView={{ opacity: 1, x: 0, y: 0 }}
-              // viewport={{ once: true }}
-              // transition={{ duration: 1, delay: 1 }}
+              initial={{ opacity: 0, x: 80, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
               className="bg-[#1f1f1f] p-1 rounded-[20px] shadow-lg"
             >
               <div className="md:w-[30rem] h-[25rem] card blue">
@@ -167,10 +167,10 @@ function SecondSection() {
 
           <div className="w-full h-fit px-5 flex flex-col md:flex-row gap-8 pt-6 lg:justify-center lg:items-center">
             <motion.div
-              // initial={{ opacity: 0, x: -80, y: 80 }}
-              // whileInView={{ opacity: 1, x: 0, y: 0 }}
-              // viewport={{ once: true }}
-              // transition={{ duration: 1, delay: 1 }}
+              initial={{ opacity: 0, x: -80, y: 80 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1, delay: 1 }}
               className="bg-[#1f1f1f] p-1 rounded-[20px] shadow-lg"
             >
               <div className="md:w-[30rem] h-[30rem] md:h-[25rem] card green">

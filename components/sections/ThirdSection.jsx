@@ -9,19 +9,19 @@ function ThirdSection() {
       <div className="lg:px-[10vw] px-8 flex flex-col justify-center md:items-center items-start">
         
         <motion.h2
-          // initial={{ opacity: 0 }}
-          // whileInView={{ opacity: 1 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 1, delay: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 1 }}
           className="text-4xl md:text-5xl md:text-center font-bold mt-4 xl:text-7xl"
         >
           Where <strong>Technology</strong> Meets <strong>Creativity</strong>
         </motion.h2>
         <motion.p
-          // initial={{ opacity: 0 }}
-          // whileInView={{ opacity: 1 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 1, delay: 1 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 1 }}
           className="md:max-w-2xl md:text-center text-xl md:text-xl mt-4"
         >
           We specialize in crafting bespoke websites, intuitive web
@@ -63,10 +63,10 @@ function ThirdSection() {
           </div>
         </motion.div>
         <motion.div
-          // initial={{ opacity: 0, x: 50 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 1, delay: 1.5 }}
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 1.5 }}
           className="card_services lg:mx-auto"
         >
           <div className="py-2">
@@ -95,10 +95,10 @@ function ThirdSection() {
           </div>
         </motion.div>
         <motion.div
-          // initial={{ opacity: 0, x: 50 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 1, delay: 2 }}
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 2 }}
           className="card_services lg:mx-auto"
         >
           <div className="py-2 ">
